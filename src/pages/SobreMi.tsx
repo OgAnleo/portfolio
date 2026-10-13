@@ -5,11 +5,11 @@ function SobreMi() {
   return (
     <main className="sobre-mi">
       <section className="presentacion">
-        <img
-          className="foto-perfil"
-          src="/perfil.jpg"
-          alt="Foto de ${perfil.nombre}"
-        />
+          <img
+            className="foto-perfil"
+            src="/perfil.jpg"
+            alt="Foto de ${perfil.nombre}"
+          />
 
         <div>
           <h1> {perfil.nombre} </h1>

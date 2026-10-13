@@ -1,10 +1,23 @@
-* {
-  box-sizing: border-box;
+:root {
+  --color-fondo: #ffffff;
+  --color-fondo-suave: #f4f3f5;
+  --color-borde: #dcd9de;
+  --color-texto: #17151a;
+  --color-texto-suave: #5c5862;
+  --color-acento: #7b1e3a;
+  --color-acento-hover: #5e152c;
+  --color-secundario: #5b3a8c;
+
+  --fuente: "Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+  background: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .sobre-mi {
@@ -17,13 +30,6 @@ body {
   display: flex;
   align-items: center;
   gap: 3rem;
-}
-
-.foto-perfil {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
 }
 
 .presentacion h1 {
@@ -39,28 +45,40 @@ body {
   margin-top: 4rem;
 }
 
+nav {
+  display: flex;
+  gap: 1rem;
+  padding: 0.2rem 1rem;
+  background: var(--color-fondo-suave);
+  border-bottom: 4px groove var(--color-borde);
+  border-top: 4px groove var(--color-borde);
+  justify-content: center
+}
+
 nav a {
-  color: inherit;
+  color: var(--color-texto-suave);
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 1.5rem 10rem;
+  border-radius: 12px;
+  transition: color 0.15s, background-color 0.15s;
+}
+
+nav a:hover {
+  color: var(--color-acento-hover);
+  background: var(--color-fondo);
 }
 
 nav a.active {
-  font-weight: bold;
-  border-bottom: 2px solid currentColor;
+  color: var(--color-acento);
+  font-weight: 600;
+  background: var(--color-fondo);
 }
 
-nav {
-  display: flex;
-  justify-content:center;
-  gap: 15rem;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid #ddd;
-}
 
 .foto-perfil {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 40%;
+  border: 2px solid var(--color-secundario)
 }
