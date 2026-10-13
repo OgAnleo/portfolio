@@ -12,5 +12,6 @@ export const proyectos: Proyecto[] = [
     nombre: "Portfolio",
     descripcion: "Este mismo portfolio, hecho para aprender React.",
     tecnologias: ["React", "TypeScript", "Vite"],
+    enlace: "https://github.com/OgAnleo/portfolio"
   },
 ];
