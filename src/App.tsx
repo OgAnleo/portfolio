@@ -1,0 +1,23 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import SobreMi from "./pages/SobreMi";
+import Educacion from "./pages/Educacion";
+import Proyectos from "./pages/Proyectos";
+import NotFound from "./pages/NotFound";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<SobreMi />} />
+        <Route path="/educacion" element={<Educacion />} />
+        <Route path="/proyectos" element={<Proyectos />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;
