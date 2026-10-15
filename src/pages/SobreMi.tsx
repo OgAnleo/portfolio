@@ -9,7 +9,7 @@ function SobreMi() {
         <section className="presentacion">
           <img
             className="foto-perfil"
-            src="/public/perfil.webp"
+            src="/portfolio/perfil.webp"
             alt={`${t("sobreMi.foto")} ${t("sobreMi.nombre")}`}
           />
 
@@ -39,7 +39,7 @@ function SobreMi() {
             </li>
           ))}
         </ul>
-        <a href="/cv.pdf" download>{t("sobreMi.cv")}</a>
+        <a href="/portfolio/cv.pdf" download>{t("sobreMi.cv")}</a>
       </div>
 
     </main >
