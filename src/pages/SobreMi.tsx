@@ -39,7 +39,7 @@ function SobreMi() {
             </li>
           ))}
         </ul>
-        <a href="/cv.pdf" download>{t("sobreMi.cv")}</a>
+        <a className="cambio-idioma" href="/cv.pdf" download>{t("sobreMi.cv")}</a>
       </div>
 
     </main >
