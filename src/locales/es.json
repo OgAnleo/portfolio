@@ -1,0 +1,88 @@
+{
+    "nav": {
+        "sobreMi": "Sobre mí",
+        "educacion": "Educación",
+        "proyectos": "Proyectos"
+    },
+    "sobreMi": {
+        "nombre": "Óscar González-Anleo Lozano",
+        "foto": "Foto de",
+        "titulo": "Desarrollador Junior de Software | React y TypeScript",
+        "descripcion": "Aprendiendo Java, React, CSS y TypeScript",
+        "busquedaTitulo": "¿Qué estoy buscando?",
+        "busquedaTexto": "Busco una oportunidad profesional como desarrollador en la que pueda aplicar mis conocimientos, seguir aprendiendo y crecer dentro del sector tecnológico. Mi objetivo es incorporarme a una empresa donde pueda desarrollar mi carrera a largo plazo, aportar valor al equipo y evolucionar profesionalmente de forma estable.",
+        "quienTitulo": "¿Quién soy?",
+        "quienTexto": "Mi trayectoria me ha permitido desarrollar habilidades de adaptación, paciencia y trabajo en equipo. Actualmente estoy centrado en la programación y en construir una base técnica sólida para desarrollar aplicaciones y afrontar nuevos retos profesionales.",
+        "habilidades": "Habilidades",
+        "niveles": {
+            "básico": "básico",
+            "medio": "medio",
+            "avanzado": "avanzado"
+        },
+        "cv": "Descargar CV"
+    },
+    "educacion": {
+        "educacion": "Educación",
+        "titulos": "Cursos Relacionados",
+        "horas": "horas",
+        "otros": "Otros cursos",
+        "estudios": {
+            "1": {
+                "titulo": "Grado Superior en Desarrollo de Aplicaciones Multiplataforma",
+                "centro": "IES Augustobriga",
+                "periodo": "2025 - Actualidad"
+            },
+            "2": {
+                "titulo": "Graduado Universitario en Ciencias del Deporte y Actividad Física",
+                "centro": "Universidad Castilla La Mancha ⟶  UCLM",
+                "periodo": "2015 - 2021"
+            }
+        },
+        "cursos": {
+            "1": {
+                "titulo": "Curso de Cassandra + Java y MySQL JDBC + MongoDB",
+                "centro": "OpenWebinars",
+                "horas": 23
+            },
+            "2": {
+                "titulo": "Curso de HTML5 y CSS3 + Manipulación del DOM desde JavaScript",
+                "centro": "OpenWebinars",
+                "horas": 18
+            },
+            "3": {
+                "titulo": "Java desde 0 + JavaFX + estructuras de datos en Java + Java XML + Javadoc + Java 18: Clean Code + Entrada y salida IO/NIO",
+                "centro": "OpenWebinars",
+                "horas": 25
+            },
+            "4": {
+                "titulo": "Curso de fundamentos de Redes + Introducción a las Redes Inalámbricas y la Revolución de las 5G: TCP/IP",
+                "centro": "OpenWebinars",
+                "horas": 16
+            }
+        },
+        "otrosCursos": {
+            "1": {
+                "titulo": "Curso Prevencion de Riesgos Laborales",
+                "centro": "Flow",
+                "horas": 75
+            },
+            "2": {
+                "titulo": "Curso Monitor BWF Shuttle Time",
+                "centro": "UCLM",
+                "horas": 45
+            }
+        }
+    },
+    "proyectos": {
+        "proyectos": "Proyectos",
+        "verProyecto": "Ver Proyecto",
+        "proyecto": {
+            "1": {
+                "descripcion": "Este mismo portfolio, hecho para aprender React."
+            },
+            "2": {
+                "descripcion": " En progreso: Aplicacion temporizador con bloqueo de pantalla."
+            }
+        }
+    }
+}

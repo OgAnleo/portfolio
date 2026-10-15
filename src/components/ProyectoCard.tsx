@@ -1,15 +1,20 @@
+
 import type { Proyecto } from "../data/proyectos";
+import { useTranslation } from "react-i18next";
 
 interface Props {
   proyecto: Proyecto;
 }
 
 function ProyectoCard({ proyecto }: Props) {
+  const { t } = useTranslation();
+
   return (
-    <article className="proyecto-card" key={proyecto.id}>
+    <article className="proyecto-card">
       <h2>{proyecto.nombre}</h2>
-      <p>{proyecto.descripcion}</p>
-      
+
+      <p>{t(`proyectos.proyecto.${proyecto.id}.descripcion`)}</p>
+
       <div className="proyecto-tecnologias">
         {proyecto.tecnologias.map((tecnologia) => (
           <span className="tag" key={tecnologia}>
@@ -23,8 +28,9 @@ function ProyectoCard({ proyecto }: Props) {
           className="enlace-proyecto"
           href={proyecto.enlace}
           target="_blank"
+          rel="noopener noreferrer"
         >
-          Ver proyecto
+          {t("proyectos.verProyecto")}
         </a>
       )}
     </article>

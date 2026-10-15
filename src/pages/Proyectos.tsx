@@ -1,12 +1,14 @@
 import { proyectos } from "../data/proyectos";
 import ProyectoCard from "../components/ProyectoCard";
+import { useTranslation } from "react-i18next";
 
 function Proyectos() {
+  const { t } = useTranslation();
   return (
     <main className="proyectos">
       <div className="segundo-fondo">
         <section>
-          <h1>Proyectos</h1>
+          <h1>{t("proyectos.proyectos")}</h1>
 
           {proyectos.map((proyecto) => (
             <ProyectoCard key={proyecto.id} proyecto={proyecto} />

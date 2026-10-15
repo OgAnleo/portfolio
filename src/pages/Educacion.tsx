@@ -1,48 +1,74 @@
-import { estudios } from "../data/educacion";
-import { cursos } from "../data/cursos";
-import { otrosCursos } from "../data/otrosCursos";
+
+import { useTranslation } from "react-i18next";
+
 function Educacion() {
+  const { t } = useTranslation();
+
+  const estudios = Object.entries(
+    t("educacion.estudios", { returnObjects: true }) as Record<
+      string,
+      { titulo: string; centro: string; periodo: string }
+    >
+  );
+
+  const cursos = Object.entries(
+    t("educacion.cursos", { returnObjects: true }) as Record<
+      string,
+      { titulo: string; centro: string; horas: number }
+    >
+  );
+
+  const otrosCursos = Object.entries(
+    t("educacion.otrosCursos", { returnObjects: true }) as Record<
+      string,
+      { titulo: string; centro: string; horas: number }
+    >
+  );
+
   return (
     <main className="educacion">
-      <div className="segundo-fondo">  
-        
+      <div className="segundo-fondo">
         <section className="fuente-curso">
-          <h1>Educación</h1>
-          {estudios.map((estudio) => (
-            <div className="titulo">
-            <article key={estudio.titulo}>
-              <h2>{estudio.titulo}</h2>
-              <span className="tag">{estudio.centro}</span >
-              <span  className="tag">{estudio.periodo}</span >
-            </article>
-            </div>
-          ))}
-        </section>
+          <h1>{t("educacion.educacion")}</h1>
 
-        <section className="fuente-curso">
-          <h1>Cursos relacionados</h1>
-          {cursos.map((Curso) =>(
-            <div className="curso">
-              <article key={Curso.titulo}>
-              <h2>{Curso.titulo}</h2>
-              <span  className="tag" >{Curso.centro} ⟶ {Curso.horas} horas</span >
+          {estudios.map(([id, estudio]) => (
+            <div className="cursos" key={id}>
+              <article>
+                <h2>{estudio.titulo}</h2>
+                <span className="tag">{estudio.centro}</span>
+                <span className="tag">{estudio.periodo}</span>
               </article>
             </div>
           ))}
-
         </section>
-        <section className="fuente-curso" >
-          <h1>Otros Cursos</h1>
-          {otrosCursos.map((OtroCurso) =>(
-            <div className="cursos">
-            <article key={OtroCurso.titulo}>
-            <h3>{OtroCurso.titulo}</h3>
-            <span  className="tag">{OtroCurso.centro} ⟶  {OtroCurso.horas}</span >
-            </article>
-          </div>
+
+        <section className="fuente-curso">
+          <h1>{t("educacion.titulos")}</h1>
+
+          {cursos.map(([id, curso]) => (
+            <div className="cursos" key={id}>
+              <article key={id}>
+                <h3>{curso.titulo}</h3>
+                <span className="tag"> {curso.centro} ⟶ {curso.horas} {t("educacion.horas")}</span>
+              </article>
+            </div>
           ))}
         </section>
 
+        <section className="fuente-curso">
+          <h1>{t("educacion.otros")}</h1>
+
+          {otrosCursos.map(([id, curso]) => (
+            <div className="cursos" key={id}>
+              <article>
+                <h3>{curso.titulo}</h3>
+                <span className="tag">
+                  {curso.centro} ⟶ {curso.horas} {t("educacion.horas")}
+                </span>
+              </article>
+            </div>
+          ))}
+        </section>
       </div>
     </main>
   );

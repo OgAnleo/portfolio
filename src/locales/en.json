@@ -1,0 +1,88 @@
+{
+    "nav": {
+        "sobreMi": "About Me",
+        "educacion": "Education",
+        "proyectos": "Projects"
+    },
+    "sobreMi": {
+        "nombre": "Óscar González-Anleo Lozano",
+        "foto": "Photo of",
+        "titulo": "Junior Software Developer | React and TypeScript",
+        "descripcion": "Learning Java, React, CSS and TypeScript",
+        "busquedaTitulo": "What am I looking for?",
+        "busquedaTexto": "I am looking for a professional opportunity as a developer where I can apply my knowledge, continue learning and grow within the tech sector. My goal is to join a company where I can build my career in the long term, contribute to the team and continue developing professionally in a stable environment.",
+        "quienTitulo": "Who am I?",
+        "quienTexto": "My background has helped me develop adaptability, patience and teamwork skills. I am currently focused on programming and building a solid technical foundation to develop applications and take on new professional challenges.",
+        "habilidades": "Skills",
+        "niveles": {
+            "básico": "basic",
+            "medio": "intermediate",
+            "avanzado": "advanced"
+        },
+        "cv": "Download CV"
+    },
+    "educacion": {
+        "educacion": "Education",
+        "titulos": "Related Courses",
+        "horas": "hours",
+        "otros": "Other Courses",
+        "estudios": {
+            "1": {
+                "titulo": "Higher Vocational Diploma in Multiplatform Application Development",
+                "centro": "IES Augustobriga",
+                "periodo": "2025 - Present"
+            },
+            "2": {
+                "titulo": "University Degree in Sports and Physical Activity Sciences",
+                "centro": "University of Castilla-La Mancha ⟶ UCLM",
+                "periodo": "2015 - 2021"
+            }
+        },
+        "cursos": {
+            "1": {
+                "titulo": "Cassandra + Java and MySQL JDBC + MongoDB Course",
+                "centro": "OpenWebinars",
+                "horas": 23
+            },
+            "2": {
+                "titulo": "HTML5 and CSS3 + DOM Manipulation with JavaScript Course",
+                "centro": "OpenWebinars",
+                "horas": 18
+            },
+            "3": {
+                "titulo": "Java from Scratch + JavaFX + Java Data Structures + Java XML + Javadoc + Java 18: Clean Code + I/O and NIO",
+                "centro": "OpenWebinars",
+                "horas": 25
+            },
+            "4": {
+                "titulo": "Networking Fundamentals + Introduction to Wireless Networks and the 5G Revolution: TCP/IP",
+                "centro": "OpenWebinars",
+                "horas": 16
+            }
+        },
+        "otrosCursos": {
+            "1": {
+                "titulo": "Occupational Risk Prevention Course",
+                "centro": "Flow",
+                "horas": 75
+            },
+            "2": {
+                "titulo": "BWF Shuttle Time Coach Course",
+                "centro": "UCLM",
+                "horas": 45
+            }
+        }
+    },
+    "proyectos": {
+        "proyectos": "Projects",
+        "verProyecto": "View project",
+        "proyecto": {
+            "1": {
+                "descripcion": "This portfolio itself, built to learn React."
+            },
+            "2": {
+                "descripcion": "In progress: A timer application with screen-locking functionality."
+            }
+        }
+    }
+}

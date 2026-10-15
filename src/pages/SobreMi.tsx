@@ -1,7 +1,8 @@
-import { perfil } from "../data/perfil";
 import { habilidades } from "../data/habilidades";
+import { useTranslation } from "react-i18next";
 
 function SobreMi() {
+  const { t } = useTranslation();
   return (
     <main className="sobre-mi">
       <div className="segundo-fondo">
@@ -9,50 +10,39 @@ function SobreMi() {
           <img
             className="foto-perfil"
             src="/perfil.webp"
-            alt={`Foto de ${perfil.nombre}`}
+            alt={`${t("sobreMi.foto")} ${t("SobreMi.nombre")}`}
           />
 
           <div>
-            <h1> {perfil.nombre} </h1>
-            <h2> {perfil.titulo} </h2>
+            <h1> {t("sobreMi.nombre")} </h1>
+            <h2> {t("sobreMi.titulo")} </h2>
 
-            <p> {perfil.descripcion} </p>
+            <p> {t("sobreMi.descripcion")} </p>
           </div>
         </section>
 
-        <section className="busqueda">
-          <h2>¿Qué estoy buscando?</h2>
-          <p>
-            Busco una oportunidad profesional como desarrollador en la que pueda aplicar mis conocimientos,
-            seguir aprendiendo y crecer dentro del sector tecnológico. Mi objetivo es incorporarme a una empresa
-            donde pueda desarrollar mi carrera a largo plazo, aportar valor al equipo y evolucionar profesionalmente
-            de forma estable.
-
-          </p>
+        <section>
+          <h2>{t("sobreMi.busquedaTitulo")}</h2>
+          <p>{t("sobreMi.busquedaTexto")}</p>
         </section>
 
-        <section className="descripcion">
-          <h2>¿Quien soy?</h2>
-          <p>
-            Mi trayectoria me ha permitido desarrollar habilidades de adaptación,
-            paciencia y trabajo en equipo. Actualmente estoy centrado en la programación y
-            en construir una base técnica sólida para desarrollar aplicaciones y
-            afrontar nuevos retos profesionales.
-          </p>
+        <section>
+          <h2>{t("sobreMi.quienTitulo")}</h2>
+          <p>{t("sobreMi.quienTexto")}</p>
         </section>
 
-        <h2>Habilidades</h2>
+        <h2>{t("sobreMi.habilidades")}</h2>
         <ul>
           {habilidades.map((habilidad) => (
             <li key={habilidad.id}>
-              {habilidad.nombre} ({habilidad.nivel})
+              {habilidad.nombre} ({t(`sobreMi.niveles.${habilidad.nivel}`)})
             </li>
           ))}
         </ul>
-        <a href="/cv.pdf" download>Descargar CV</a>
+        <a href="/cv.pdf" download>{t("sobreMi.cv")}</a>
       </div>
 
-    </main>
+    </main >
   );
 }
 

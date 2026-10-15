@@ -4,14 +4,14 @@
   --color-borde: #aea8a9;
   --color-fondo-secundario: #88051244;
   --color-texto: #1a1517;
-  --color-tarjeta:rgb(219, 219, 230);
+  --color-tarjeta: rgb(219, 219, 230);
   --color-texto-suave: #5c5862;
   --color-acento: #7b1e3a;
   --color-acento-hover: #727171e1;
   --color-secundario: #7d1643;
-  
+
   --fuente: "Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
-font-size: 150%;
+  font-size: 150%;
 }
 
 #root {
@@ -38,6 +38,28 @@ body {
   margin: 0 auto;
   padding: 1rem 2rem;
 }
+
+.sobre-mi a {
+  display: flex;
+  background-color: var(--color-fondo-secundario);
+  text-decoration: none;
+  color: var(--color-texto);
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-right: 0.5rem;
+  justify-content: center;
+  font-style: italic;
+  font-size: larger;
+
+}
+
+.sobre-mi a:hover {
+  color: var(--color-fondo);
+  background-color: var(--color-acento);
+}
+
 .proyectos {
   background-color: var(--color-secundario);
   max-width: 1750px;
@@ -45,6 +67,7 @@ body {
   margin: 0 auto;
   padding: 1rem 2rem;
 }
+
 .educacion {
   background-color: var(--color-secundario);
   max-width: 1750px;
@@ -52,6 +75,7 @@ body {
   margin: 0 auto;
   padding: 1rem 2rem;
 }
+
 .segundo-fondo {
 
   gap: 1rem;
@@ -81,7 +105,7 @@ body {
 nav {
   width: 100%;
   position: sticky;
-  top:0;
+  top: 0;
   display: flex;
   z-index: 1000;
   gap: 0.5rem;
@@ -89,7 +113,7 @@ nav {
   background: var(--color-fondo-suave);
   border-bottom: 4px groove var(--color-borde);
   border-top: 4px groove var(--color-borde);
-   flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -113,13 +137,14 @@ nav a.active {
 }
 
 .foto-perfil {
-  text-align:center;
+  text-align: center;
   width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 40%;
   border: 3px solid var(--color-secundario)
 }
+
 .proyecto-card {
   background-color: var(--color-tarjeta);
   border: 1px solid var(--color-borde);
@@ -140,7 +165,7 @@ nav a.active {
 }
 
 .tag {
-  background-color:var(--color-fondo-secundario);
+  background-color: var(--color-fondo-secundario);
   color: var(--color-texto);
   padding: 5px 10px;
   border-radius: 6px;
@@ -157,7 +182,7 @@ nav a.active {
   text-decoration: none;
   padding: 12px;
   border-radius: 12px;
-  transition: color 0.15s, background-color 0.15s;
+
 }
 
 .enlace-proyecto:hover {
@@ -165,20 +190,12 @@ nav a.active {
   background-color: var(--color-fondo);
 }
 
+
 .enlace-proyecto:visited {
   background-color: var(--color-texto-suave);
 }
 
-.curso{
-  background-color: var(--color-tarjeta);
-  border: 1px solid var(--color-borde);
-  border-style: groove;
-  margin-top: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
-}
-.cursos{
+.cursos {
   background-color: var(--color-tarjeta);
   border: 1px solid var(--color-borde);
   border-style: groove;
@@ -188,35 +205,27 @@ nav a.active {
   padding-bottom: 1rem;
 }
 
-.titulo{
-  background-color: var(--color-tarjeta);
-  border: 1px solid var(--color-borde);
-  border-style: groove;
-  margin-top: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
-}
-.fuente-curso h2{
-font-size:larger;
-font-weight: normal;
-font-style: oblique;
-}
-
-.fuente-curso h3{
+.fuente-curso h2 {
+  font-size: larger;
   font-weight: normal;
-font-style: oblique;
+  font-style: oblique;
 }
+
+.fuente-curso h3 {
+  font-weight: normal;
+  font-style: oblique;
+}
+
 footer {
   display: flex;
   justify-content: center;
   padding: 1rem 1rem;
   padding-left: 4rem;
-  gap:0rem;
+  gap: 0rem;
   border-top: 1px solid var(--color-borde);
   background: var(--color-fondo-suave);
   margin-top: auto;
- 
+
   margin-bottom: 0;
 }
 
@@ -229,4 +238,18 @@ footer a {
 
 footer a:hover {
   color: var(--color-acento-hover);
+}
+
+nav button {
+  background: none;
+  border: 1px solid var(--color-borde);
+  border-radius: 12px;
+  color: var(--color-texto-suave);
+  cursor: pointer;
+  padding: 0 1rem;
+}
+
+nav button:hover {
+  color: var(--color-acento-hover);
+  background: var(--color-fondo);
 }
