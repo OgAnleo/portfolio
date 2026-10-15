@@ -14,4 +14,11 @@ export const proyectos: Proyecto[] = [
     tecnologias: ["React", "TypeScript", "Vite"],
     enlace: "https://github.com/OgAnleo/portfolio"
   },
+  {
+    id: 2,
+    nombre: "App bloqueo con temporizador de movil",
+    descripcion: "En progreso: Aplicacion con temporalizador en el movil",
+    tecnologias: ["por decidir"],
+  },
+
 ];

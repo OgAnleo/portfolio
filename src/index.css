@@ -1,14 +1,17 @@
 :root {
   --color-fondo: #ffffff;
   --color-fondo-suave: #f4f3f5;
-  --color-borde: #dcd9de;
-  --color-texto: #17151a;
+  --color-borde: #aea8a9;
+  --color-fondo-secundario: #88051244;
+  --color-texto: #1a1517;
+  --color-tarjeta:rgb(219, 219, 230);
   --color-texto-suave: #5c5862;
   --color-acento: #7b1e3a;
-  --color-acento-hover: #5e152c;
-  --color-secundario: #5b3a8c;
+  --color-acento-hover: #727171e1;
+  --color-secundario: #7d1643;
 
   --fuente: "Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
+font-size: 150%;
 }
 
 body {
@@ -21,9 +24,28 @@ body {
 }
 
 .sobre-mi {
-  max-width: 1000px;
+  background-color: var(--color-secundario);
+  max-width: 1750px;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 1rem 2rem;
+}
+.proyectos {
+  background-color: var(--color-secundario);
+  max-width: 1750px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+.educacion {
+  background-color: var(--color-secundario);
+  max-width: 1750px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+.segundo-fondo {
+
+  gap: 1rem;
+  padding: 2rem 5rem;
+  background-color: var(--color-fondo-suave);
 }
 
 .presentacion {
@@ -46,13 +68,16 @@ body {
 }
 
 nav {
+  width: 100%;
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   padding: 0.2rem 1rem;
   background: var(--color-fondo-suave);
   border-bottom: 4px groove var(--color-borde);
   border-top: 4px groove var(--color-borde);
+   flex-wrap: wrap;
   justify-content: center
+  
 }
 
 nav a {
@@ -74,11 +99,98 @@ nav a.active {
   background: var(--color-fondo);
 }
 
-
 .foto-perfil {
+  text-align:center;
   width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 40%;
-  border: 2px solid var(--color-secundario)
+  border: 3px solid var(--color-secundario)
+}
+.proyecto-card {
+  background-color: var(--color-tarjeta);
+  border: 1px solid var(--color-borde);
+  border-style: groove;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+
+}
+
+.proyecto-tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  background-color:var(--color-fondo-secundario);
+  color: var(--color-texto);
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+
+.enlace-proyecto {
+  display: block;
+  background-color: var(--color-texto);
+  color: var(--color-fondo);
+  text-align: center;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 12px;
+  transition: color 0.15s, background-color 0.15s;
+}
+
+.enlace-proyecto:hover {
+  color: var(--color-acento-hover);
+  background-color: var(--color-fondo);
+}
+
+.enlace-proyecto:visited {
+  background-color: var(--color-texto-suave);
+}
+
+.curso{
+  background-color: var(--color-tarjeta);
+  border: 1px solid var(--color-borde);
+  border-style: groove;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+.cursos{
+  background-color: var(--color-tarjeta);
+  border: 1px solid var(--color-borde);
+  border-style: groove;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+.titulo{
+  background-color: var(--color-tarjeta);
+  border: 1px solid var(--color-borde);
+  border-style: groove;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+.fuente-curso h2{
+font-size:larger;
+font-weight: normal;
+font-style: oblique;
+}
+
+.fuente-curso h3{
+  font-weight: normal;
+font-style: oblique;
 }

@@ -1,18 +1,19 @@
 import { proyectos } from "../data/proyectos";
+import ProyectoCard from "../components/ProyectoCard";
 
 function Proyectos() {
   return (
-    <section>
-      <h1>Proyectos</h1>
-      {proyectos.map((proyecto) => (
-  <article key={proyecto.id}>
-    <h2>{proyecto.nombre}</h2>
-    <p>{proyecto.descripcion}</p>
-    <p>{proyecto.tecnologias.join(", ")}</p>
-    {proyecto.enlace && <a href={proyecto.enlace}>Ver proyecto</a>}
-  </article>
-      ))}
-    </section>
+    <main className="proyectos">
+      <div className="segundo-fondo">
+        <section>
+          <h1>Proyectos</h1>
+
+          {proyectos.map((proyecto) => (
+            <ProyectoCard key={proyecto.id} proyecto={proyecto} />
+          ))}
+        </section>
+      </div>
+    </main>
   );
 }
 

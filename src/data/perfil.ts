@@ -6,6 +6,6 @@ export interface Perfil {
 
 export const perfil: Perfil = {
   nombre: "Óscar González-Anleo Lozano",
-  titulo: "Estudiante de DAM",
-  descripcion: "Aprendiendo React y TypeScript.",
+  titulo: "Desarrollador Junior de Software | React y TypeScript" ,
+  descripcion: "Aprendiendo Java, React, CSS y TypeScript // recordar hacer una traduccion al ingles",
 };

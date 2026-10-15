@@ -5,7 +5,7 @@ export interface Habilidad {
 }
 
 export const habilidades: Habilidad[] = [
-  { id: 1, nombre: "React", nivel: "básico" },
-  { id: 2, nombre: "TypeScript", nivel: "básico" },
-  { id: 3, nombre: "Java", nivel: "medio" },
+  { id: 1, nombre: "React", nivel: "medio" },
+  { id: 2, nombre: "TypeScript", nivel: "medio" },
+  { id: 3, nombre: "Java", nivel: "básico" },
 ];
