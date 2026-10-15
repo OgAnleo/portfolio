@@ -9,14 +9,22 @@
   --color-acento: #7b1e3a;
   --color-acento-hover: #727171e1;
   --color-secundario: #7d1643;
-
+  
   --fuente: "Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
 font-size: 150%;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
   background: var(--color-fondo);
   color: var(--color-texto);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 * {
@@ -26,18 +34,21 @@ body {
 .sobre-mi {
   background-color: var(--color-secundario);
   max-width: 1750px;
+  width: 100%;
   margin: 0 auto;
   padding: 1rem 2rem;
 }
 .proyectos {
   background-color: var(--color-secundario);
   max-width: 1750px;
+  width: 100%;
   margin: 0 auto;
   padding: 1rem 2rem;
 }
 .educacion {
   background-color: var(--color-secundario);
   max-width: 1750px;
+  width: 100%;
   margin: 0 auto;
   padding: 1rem 2rem;
 }
@@ -69,15 +80,17 @@ body {
 
 nav {
   width: 100%;
+  position: sticky;
+  top:0;
   display: flex;
+  z-index: 1000;
   gap: 0.5rem;
   padding: 0.2rem 1rem;
   background: var(--color-fondo-suave);
   border-bottom: 4px groove var(--color-borde);
   border-top: 4px groove var(--color-borde);
    flex-wrap: wrap;
-  justify-content: center
-  
+  justify-content: center;
 }
 
 nav a {
@@ -193,4 +206,27 @@ font-style: oblique;
 .fuente-curso h3{
   font-weight: normal;
 font-style: oblique;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 1rem;
+  padding-left: 4rem;
+  gap:0rem;
+  border-top: 1px solid var(--color-borde);
+  background: var(--color-fondo-suave);
+  margin-top: auto;
+ 
+  margin-bottom: 0;
+}
+
+footer a {
+  color: var(--color-acento);
+  text-decoration: none;
+  padding: 0rem 0.5rem;
+  padding-right: 4rem;
+}
+
+footer a:hover {
+  color: var(--color-acento-hover);
 }

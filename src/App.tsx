@@ -4,6 +4,9 @@ import SobreMi from "./pages/SobreMi";
 import Educacion from "./pages/Educacion";
 import Proyectos from "./pages/Proyectos";
 import NotFound from "./pages/NotFound";
+import Footer from "./components/Footer";
+
+
 
 function App() {
   return (
@@ -16,6 +19,8 @@ function App() {
         <Route path="/proyectos" element={<Proyectos />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+
+      <Footer />
     </BrowserRouter>
   );
 }
