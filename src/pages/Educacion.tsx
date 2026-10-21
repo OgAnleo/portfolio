@@ -26,7 +26,7 @@ function Educacion() {
 
   const renderCursos = (lista: [string, Curso][]) =>
     lista.map(([id, curso]) => (
-      <div className="cursos" key={id}>
+      <div className="tarjeta" key={id}>
         <article>
           <h3>{curso.titulo}</h3>
           <span className="tag">
@@ -37,13 +37,13 @@ function Educacion() {
     ));
 
   return (
-    <main className="educacion">
+    <main className="pagina">
       <div className="segundo-fondo">
         <section className="fuente-curso">
           <h1>{t("educacion.educacion")}</h1>
 
           {estudios.map(([id, estudio]) => (
-            <div className="cursos" key={id}>
+            <div className="tarjeta" key={id}>
               <article>
                 <h2>{estudio.titulo}</h2>
                 <span className="tag">{estudio.centro}</span>

@@ -1,3 +1,4 @@
+/* ===== Variables ===== */
 :root {
   --color-fondo: #ffffff;
   --color-fondo-suave: #f4f3f5;
@@ -13,10 +14,9 @@
   --fuente: "Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
-#root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -27,48 +27,14 @@ body {
   margin-bottom: 0;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-.sobre-mi {
-  background-color: var(--color-secundario);
-  max-width: 1750px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 1rem 2rem;
-}
-
-.sobre-mi a {
+#root {
   display: flex;
-  background-color: var(--color-fondo-secundario);
-  text-decoration: none;
-  color: var(--color-texto);
-  padding: 5px 10px;
-  border-radius: 6px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  margin-right: 0.5rem;
-  justify-content: center;
-  font-style: italic;
-  font-size: larger;
-
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.sobre-mi a:hover {
-  color: var(--color-fondo);
-  background-color: var(--color-acento);
-}
-
-.proyectos {
-  background-color: var(--color-secundario);
-  max-width: 1750px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 1rem 2rem;
-}
-
-.educacion {
+/* ===== Layout de páginas ===== */
+.pagina {
   background-color: var(--color-secundario);
   max-width: 1750px;
   width: 100%;
@@ -81,26 +47,7 @@ body {
   background-color: var(--color-fondo-suave);
 }
 
-.presentacion {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1.5rem 3rem;
-}
-
-.presentacion h1 {
-  margin-bottom: 0.5rem;
-}
-
-.presentacion h2 {
-  margin-top: 0;
-  font-weight: normal;
-}
-
-.busqueda {
-  margin-top: 4rem;
-}
-
+/* ===== Navegación ===== */
 nav {
   position: sticky;
   top: 0;
@@ -123,7 +70,6 @@ nav a {
   transition: color 0.15s, background-color 0.15s;
   padding: 1rem;
   justify-content: center;
-
 }
 
 nav a:hover {
@@ -137,24 +83,71 @@ nav a.active {
   background: var(--color-fondo);
 }
 
+nav button {
+  background: none;
+  border: 1px solid var(--color-borde);
+  border-radius: 12px;
+  color: var(--color-texto-suave);
+  cursor: pointer;
+  padding: 1rem;
+}
+
+nav button:hover {
+  color: var(--color-acento-hover);
+  background: var(--color-fondo);
+}
+
+/* ===== Sobre mí ===== */
+.presentacion {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem 3rem;
+}
+
+.presentacion h1 {
+  margin-bottom: 0.5rem;
+}
+
+.presentacion h2 {
+  margin-top: 0;
+  font-weight: normal;
+}
+
 .foto-perfil {
   text-align: center;
   width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 40%;
-  border: 3px solid var(--color-secundario)
+  border: 3px solid var(--color-secundario);
 }
 
-.proyecto-card {
-  background-color: var(--color-tarjeta);
-  border: 1px solid var(--color-borde);
-  border-style: groove;
-  margin-top: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
+.boton-cv {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-fondo-secundario);
+  text-decoration: none;
+  color: var(--color-texto);
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-style: italic;
+  font-size: larger;
+  margin-right: 0.5rem;
+}
 
+.boton-cv:hover {
+  color: var(--color-fondo);
+  background-color: var(--color-acento);
+}
+
+/* ===== Tarjetas (proyectos y educación) ===== */
+.tarjeta {
+  background-color: var(--color-tarjeta);
+  border: 1px groove var(--color-borde);
+  margin-top: 1rem;
+  padding: 0 1rem 1rem;
 }
 
 .proyecto-tecnologias {
@@ -183,7 +176,6 @@ nav a.active {
   text-decoration: none;
   padding: 12px;
   border-radius: 12px;
-
 }
 
 .enlace-proyecto:hover {
@@ -191,19 +183,8 @@ nav a.active {
   background-color: var(--color-fondo);
 }
 
-
 .enlace-proyecto:visited {
   background-color: var(--color-texto-suave);
-}
-
-.cursos {
-  background-color: var(--color-tarjeta);
-  border: 1px solid var(--color-borde);
-  border-style: groove;
-  margin-top: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
 }
 
 .fuente-curso h2 {
@@ -217,6 +198,7 @@ nav a.active {
   font-style: oblique;
 }
 
+/* ===== Footer ===== */
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -226,11 +208,9 @@ footer {
   width: 100%;
   border-top: 1px solid var(--color-borde);
   background: var(--color-fondo-suave);
-  text-align: center;
   padding: 0.5rem;
   margin-top: 0.2rem;
 }
-
 
 footer a {
   color: var(--color-acento);
@@ -242,24 +222,9 @@ footer a:hover {
   color: var(--color-acento-hover);
 }
 
-nav button {
-  background: none;
-  border: 1px solid var(--color-borde);
-  border-radius: 12px;
-  color: var(--color-texto-suave);
-  cursor: pointer;
-  padding: 1rem;
-}
-
-nav button:hover {
-  color: var(--color-acento-hover);
-  background: var(--color-fondo);
-}
-
+/* ===== Móvil ===== */
 @media (max-width: 600px) {
-  .sobre-mi,
-  .proyectos,
-  .educacion {
+  .pagina {
     padding: 0.5rem;
   }
 

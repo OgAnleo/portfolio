@@ -10,7 +10,7 @@ function ProyectoCard({ proyecto }: Props) {
   const { t } = useTranslation();
 
   return (
-    <article className="proyecto-card">
+    <article className="tarjeta">
       <h2>{proyecto.nombre}</h2>
 
       <p>{t(`proyectos.proyecto.${proyecto.id}.descripcion`)}</p>
