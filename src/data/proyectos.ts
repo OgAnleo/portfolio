@@ -12,7 +12,7 @@ export const proyectos: Proyecto[] = [
   },
   {
     id: 2,
-    tecnologias: ["Dart", "Flutter"],
+    tecnologias: ["Dart", "Flutter", "Kotlin", "l10n"],
     enlace: "https://github.com/OgAnleo/ziesta",
   },
 
