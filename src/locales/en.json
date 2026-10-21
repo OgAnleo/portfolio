@@ -15,11 +15,15 @@
         "quienTexto": "My background has helped me develop adaptability, patience and teamwork skills. I am currently focused on programming and building a solid technical foundation to develop applications and take on new professional challenges.",
         "habilidades": "Skills",
         "niveles": {
-            "básico": "basic",
+            "basico": "basic",
             "medio": "intermediate",
             "avanzado": "advanced"
         },
         "cv": "Download CV"
+    },
+    "notFound": {
+        "titulo": "Page not found",
+        "texto": "The address you typed does not exist."
     },
     "educacion": {
         "educacion": "Education",

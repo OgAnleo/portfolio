@@ -1,8 +1,11 @@
+import { useTranslation } from "react-i18next";
+
 function NotFound() {
+  const { t } = useTranslation();
   return (
     <section>
-      <h1>Página no encontrada</h1>
-      <p>La dirección que has escrito no existe.</p>
+      <h1>{t("notFound.titulo")}</h1>
+      <p>{t("notFound.texto")}</p>
     </section>
   );
 }

@@ -6,11 +6,10 @@ function Navbar() {
 
     <nav>
 
-      <NavLink className="boton-nav" to="/">{t("nav.sobreMi")}</NavLink>
+      <NavLink to="/">{t("nav.sobreMi")}</NavLink>
       <NavLink to="/educacion">{t("nav.educacion")}</NavLink>
       <NavLink to="/proyectos">{t("nav.proyectos")}</NavLink>
       <button
-        className="cambio-idioma"
         type="button"
         onClick={() => i18n.changeLanguage(i18n.language === "es" ? "en" : "es")}
       >
