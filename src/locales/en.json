@@ -7,19 +7,23 @@
     "sobreMi": {
         "nombre": "Óscar González-Anleo Lozano",
         "foto": "Photo of",
-        "titulo": "Junior Software Developer | React and TypeScript",
-        "descripcion": "Learning Java, React, CSS and TypeScript",
+        "titulo": "Junior Software Developer | Flutter, React and TypeScript",
+        "descripcion": "Learning Java, React, CSS, TypeScript, Dart and Flutter",
         "busquedaTitulo": "What am I looking for?",
         "busquedaTexto": "I am looking for a professional opportunity as a developer where I can apply my knowledge, continue learning and grow within the tech sector. My goal is to join a company where I can build my career in the long term, contribute to the team and continue developing professionally in a stable environment.",
         "quienTitulo": "Who am I?",
         "quienTexto": "My background has helped me develop adaptability, patience and teamwork skills. I am currently focused on programming and building a solid technical foundation to develop applications and take on new professional challenges.",
         "habilidades": "Skills",
         "niveles": {
-            "básico": "basic",
+            "basico": "basic",
             "medio": "intermediate",
             "avanzado": "advanced"
         },
         "cv": "Download CV"
+    },
+    "notFound": {
+        "titulo": "Page not found",
+        "texto": "The address you typed does not exist."
     },
     "educacion": {
         "educacion": "Education",
@@ -78,10 +82,12 @@
         "verProyecto": "View project",
         "proyecto": {
             "1": {
+                "nombre": "Portfolio",
                 "descripcion": "This portfolio itself, built to learn React."
             },
             "2": {
-                "descripcion": "In progress: A timer application with screen-locking functionality."
+                "nombre": "Ziesta",
+                "descripcion": "Mobile lock app with a timer"
             }
         }
     }

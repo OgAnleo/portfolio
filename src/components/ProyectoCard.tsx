@@ -10,18 +10,20 @@ function ProyectoCard({ proyecto }: Props) {
   const { t } = useTranslation();
 
   return (
-    <article className="proyecto-card">
-      <h2>{proyecto.nombre}</h2>
+    <article className="tarjeta">
+      <h2>{t(`proyectos.proyecto.${proyecto.id}.nombre`)}</h2>
 
       <p>{t(`proyectos.proyecto.${proyecto.id}.descripcion`)}</p>
 
-      <div className="proyecto-tecnologias">
-        {proyecto.tecnologias.map((tecnologia) => (
-          <span className="tag" key={tecnologia}>
-            {tecnologia}
-          </span>
-        ))}
-      </div>
+      {proyecto.tecnologias.length > 0 && (
+        <div className="proyecto-tecnologias">
+          {proyecto.tecnologias.map((tecnologia) => (
+            <span className="tag" key={tecnologia}>
+              {tecnologia}
+            </span>
+          ))}
+        </div>
+      )}
 
       {proyecto.enlace && (
         <a

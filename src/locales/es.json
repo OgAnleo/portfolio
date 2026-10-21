@@ -7,19 +7,23 @@
     "sobreMi": {
         "nombre": "Óscar González-Anleo Lozano",
         "foto": "Foto de",
-        "titulo": "Desarrollador Junior de Software | React y TypeScript",
-        "descripcion": "Aprendiendo Java, React, CSS y TypeScript",
+        "titulo": "Desarrollador Junior de Software | Flutter, React y TypeScript",
+        "descripcion": "Aprendiendo Java, React, CSS, TypeScript, Dart y Flutter",
         "busquedaTitulo": "¿Qué estoy buscando?",
         "busquedaTexto": "Busco una oportunidad profesional como desarrollador en la que pueda aplicar mis conocimientos, seguir aprendiendo y crecer dentro del sector tecnológico. Mi objetivo es incorporarme a una empresa donde pueda desarrollar mi carrera a largo plazo, aportar valor al equipo y evolucionar profesionalmente de forma estable.",
         "quienTitulo": "¿Quién soy?",
         "quienTexto": "Mi trayectoria me ha permitido desarrollar habilidades de adaptación, paciencia y trabajo en equipo. Actualmente estoy centrado en la programación y en construir una base técnica sólida para desarrollar aplicaciones y afrontar nuevos retos profesionales.",
         "habilidades": "Habilidades",
         "niveles": {
-            "básico": "básico",
+            "basico": "básico",
             "medio": "medio",
             "avanzado": "avanzado"
         },
         "cv": "Descargar CV"
+    },
+    "notFound": {
+        "titulo": "Página no encontrada",
+        "texto": "La dirección que has escrito no existe."
     },
     "educacion": {
         "educacion": "Educación",
@@ -62,7 +66,7 @@
         },
         "otrosCursos": {
             "1": {
-                "titulo": "Curso Prevencion de Riesgos Laborales",
+                "titulo": "Curso Prevención de Riesgos Laborales",
                 "centro": "Flow",
                 "horas": 75
             },
@@ -78,10 +82,12 @@
         "verProyecto": "Ver Proyecto",
         "proyecto": {
             "1": {
+                "nombre": "Portfolio",
                 "descripcion": "Este mismo portfolio, hecho para aprender React."
             },
             "2": {
-                "descripcion": " En progreso: Aplicacion temporizador con bloqueo de pantalla."
+                "nombre": "Ziesta",
+                "descripcion": "App de bloqueo con temporizador para móvil"
             }
         }
     }

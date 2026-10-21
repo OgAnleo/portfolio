@@ -9,4 +9,9 @@ i18n.use(initReactI18next).init({
     fallbackLng: "es",
 });
 
+// Mantiene el atributo lang de <html> sincronizado con el idioma activo
+i18n.on("languageChanged", (lng) => {
+    document.documentElement.lang = lng;
+});
+
 export default i18n;

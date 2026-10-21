@@ -4,12 +4,12 @@ import { useTranslation } from "react-i18next";
 function SobreMi() {
   const { t } = useTranslation();
   return (
-    <main className="sobre-mi">
+    <main className="pagina">
       <div className="segundo-fondo">
         <section className="presentacion">
           <img
             className="foto-perfil"
-            src="/portfolio/perfil.webp"
+            src={`${import.meta.env.BASE_URL}perfil.webp`}
             alt={`${t("sobreMi.foto")} ${t("sobreMi.nombre")}`}
           />
 
@@ -39,7 +39,7 @@ function SobreMi() {
             </li>
           ))}
         </ul>
-        <a href="/portfolio/cv.pdf" download>{t("sobreMi.cv")}</a>
+        <a className="boton-cv" href={`${import.meta.env.BASE_URL}cv.pdf`} download>{t("sobreMi.cv")}</a>
       </div>
 
     </main >

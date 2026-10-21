@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 function Proyectos() {
   const { t } = useTranslation();
   return (
-    <main className="proyectos">
+    <main className="pagina">
       <div className="segundo-fondo">
         <section>
           <h1>{t("proyectos.proyectos")}</h1>
