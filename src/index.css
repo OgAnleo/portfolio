@@ -20,6 +20,7 @@
 }
 
 body {
+  font-family: var(--fuente);
   background: var(--color-fondo);
   color: var(--color-texto);
   margin-top: 0;
