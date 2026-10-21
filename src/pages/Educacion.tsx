@@ -1,29 +1,40 @@
-
 import { useTranslation } from "react-i18next";
+
+interface Estudio {
+  titulo: string;
+  centro: string;
+  periodo: string;
+}
+
+interface Curso {
+  titulo: string;
+  centro: string;
+  horas: number;
+}
 
 function Educacion() {
   const { t } = useTranslation();
 
-  const estudios = Object.entries(
-    t("educacion.estudios", { returnObjects: true }) as Record<
-      string,
-      { titulo: string; centro: string; periodo: string }
-    >
-  );
+  // Un genérico <T> es un "tipo comodín": la misma función sirve para
+  // estudios y cursos, y TypeScript sabe qué devuelve en cada caso.
+  const leerLista = <T,>(clave: string) =>
+    Object.entries(t(clave, { returnObjects: true }) as Record<string, T>);
 
-  const cursos = Object.entries(
-    t("educacion.cursos", { returnObjects: true }) as Record<
-      string,
-      { titulo: string; centro: string; horas: number }
-    >
-  );
+  const estudios = leerLista<Estudio>("educacion.estudios");
+  const cursos = leerLista<Curso>("educacion.cursos");
+  const otrosCursos = leerLista<Curso>("educacion.otrosCursos");
 
-  const otrosCursos = Object.entries(
-    t("educacion.otrosCursos", { returnObjects: true }) as Record<
-      string,
-      { titulo: string; centro: string; horas: number }
-    >
-  );
+  const renderCursos = (lista: [string, Curso][]) =>
+    lista.map(([id, curso]) => (
+      <div className="cursos" key={id}>
+        <article>
+          <h3>{curso.titulo}</h3>
+          <span className="tag">
+            {curso.centro} ⟶ {curso.horas} {t("educacion.horas")}
+          </span>
+        </article>
+      </div>
+    ));
 
   return (
     <main className="educacion">
@@ -44,30 +55,12 @@ function Educacion() {
 
         <section className="fuente-curso">
           <h1>{t("educacion.titulos")}</h1>
-
-          {cursos.map(([id, curso]) => (
-            <div className="cursos" key={id}>
-              <article key={id}>
-                <h3>{curso.titulo}</h3>
-                <span className="tag"> {curso.centro} ⟶ {curso.horas} {t("educacion.horas")}</span>
-              </article>
-            </div>
-          ))}
+          {renderCursos(cursos)}
         </section>
 
         <section className="fuente-curso">
           <h1>{t("educacion.otros")}</h1>
-
-          {otrosCursos.map(([id, curso]) => (
-            <div className="cursos" key={id}>
-              <article>
-                <h3>{curso.titulo}</h3>
-                <span className="tag">
-                  {curso.centro} ⟶ {curso.horas} {t("educacion.horas")}
-                </span>
-              </article>
-            </div>
-          ))}
+          {renderCursos(otrosCursos)}
         </section>
       </div>
     </main>
