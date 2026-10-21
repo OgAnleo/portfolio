@@ -12,7 +12,7 @@ export const proyectos: Proyecto[] = [
   },
   {
     id: 2,
-    tecnologias: [],
+    tecnologias: ["Dart", "Flutter"],
   },
 
 ];

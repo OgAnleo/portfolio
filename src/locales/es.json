@@ -7,7 +7,7 @@
     "sobreMi": {
         "nombre": "Óscar González-Anleo Lozano",
         "foto": "Foto de",
-        "titulo": "Desarrollador Junior de Software | React y TypeScript",
+        "titulo": "Desarrollador Junior de Software | Flutter, React y TypeScript",
         "descripcion": "Aprendiendo Java, React, CSS, TypeScript, Dart y Flutter",
         "busquedaTitulo": "¿Qué estoy buscando?",
         "busquedaTexto": "Busco una oportunidad profesional como desarrollador en la que pueda aplicar mis conocimientos, seguir aprendiendo y crecer dentro del sector tecnológico. Mi objetivo es incorporarme a una empresa donde pueda desarrollar mi carrera a largo plazo, aportar valor al equipo y evolucionar profesionalmente de forma estable.",
@@ -86,8 +86,8 @@
                 "descripcion": "Este mismo portfolio, hecho para aprender React."
             },
             "2": {
-                "nombre": "App de bloqueo con temporizador para móvil",
-                "descripcion": "En progreso: aplicación de temporizador con bloqueo de pantalla."
+                "nombre": "Ziesta",
+                "descripcion": "App de bloqueo con temporizador para móvil"
             }
         }
     }
