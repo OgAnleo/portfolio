@@ -66,7 +66,7 @@
         },
         "otrosCursos": {
             "1": {
-                "titulo": "Curso Prevencion de Riesgos Laborales",
+                "titulo": "Curso Prevención de Riesgos Laborales",
                 "centro": "Flow",
                 "horas": 75
             },
@@ -82,10 +82,12 @@
         "verProyecto": "Ver Proyecto",
         "proyecto": {
             "1": {
+                "nombre": "Portfolio",
                 "descripcion": "Este mismo portfolio, hecho para aprender React."
             },
             "2": {
-                "descripcion": " En progreso: Aplicacion temporizador con bloqueo de pantalla."
+                "nombre": "App de bloqueo con temporizador para móvil",
+                "descripcion": "En progreso: aplicación de temporizador con bloqueo de pantalla."
             }
         }
     }

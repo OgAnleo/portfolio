@@ -82,9 +82,11 @@
         "verProyecto": "View project",
         "proyecto": {
             "1": {
+                "nombre": "Portfolio",
                 "descripcion": "This portfolio itself, built to learn React."
             },
             "2": {
+                "nombre": "Mobile app that locks the phone with a timer",
                 "descripcion": "In progress: A timer application with screen-locking functionality."
             }
         }
