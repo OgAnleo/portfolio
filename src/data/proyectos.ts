@@ -15,5 +15,10 @@ export const proyectos: Proyecto[] = [
     tecnologias: ["Dart", "Flutter", "Kotlin", "l10n"],
     enlace: "https://github.com/OgAnleo/ziesta",
   },
+  {
+    id: 3,
+    tecnologias: ["Laravel", "PHP", "React", "TypeScript", "Inertia", "Tailwind", "PostgreSQL"],
+    enlace: "https://gar-age.onrender.com/",
+  },
 
 ];

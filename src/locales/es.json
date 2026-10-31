@@ -88,6 +88,10 @@
             "2": {
                 "nombre": "Ziesta",
                 "descripcion": "App de bloqueo con temporizador para móvil"
+            },
+            "3": {
+                "nombre": "Gar-Age",
+                "descripcion": "SaaS multiempresa para alquilar trasteros y garajes: unidades, clientes, contratos con tarifas diarias, semanales, mensuales o anuales, y generación automática de cuotas. Arquitectura hexagonal."
             }
         }
     }

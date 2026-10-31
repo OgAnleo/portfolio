@@ -88,6 +88,10 @@
             "2": {
                 "nombre": "Ziesta",
                 "descripcion": "Mobile lock app with a timer"
+            },
+            "3": {
+                "nombre": "Gar-Age",
+                "descripcion": "Multi-tenant SaaS for renting storage units and garages: units, customers, contracts with daily, weekly, monthly or annual rates, and automatic fee generation. Hexagonal architecture."
             }
         }
     }
